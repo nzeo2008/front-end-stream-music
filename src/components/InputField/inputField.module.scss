@@ -1,0 +1,14 @@
+@import '../../index.module.scss';
+
+.input_field_container {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem 0rem;
+	border-bottom: 0.1rem solid $primary_colour;
+	position: relative;
+
+	&:focus-within {
+		transition: 0.3s all ease-in-out;
+		border-bottom: 0.1rem solid $accent_colour;
+	}
+}

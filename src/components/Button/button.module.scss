@@ -1,0 +1,18 @@
+@import '../../index.module.scss';
+
+.login_btn {
+	background-color: transparent;
+	color: $accent_colour;
+	padding: 0.6rem 1.2rem;
+	font-size: 0.8rem;
+	border: 1px solid $accent_colour;
+	cursor: pointer;
+	width: max-content;
+	margin-top: 1rem;
+
+	&:hover {
+		background-color: $accent_colour;
+		color: white;
+		transition: 0.15s all ease-in-out;
+	}
+}
