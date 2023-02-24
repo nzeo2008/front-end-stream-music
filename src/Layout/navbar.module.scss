@@ -1,0 +1,62 @@
+@import '../index.module.scss';
+
+.navbar_wrapper {
+	display: flex;
+	justify-content: flex-start;
+	width: max-content;
+	background-color: $primary_colour-dark;
+	position: fixed;
+	height: 100%;
+
+	a[class='active'] {
+		color: $accent_colour;
+	}
+
+	&:hover {
+		a {
+			width: 20rem;
+			transition: 0.2s all ease-in-out;
+		}
+
+		li {
+			opacity: 1;
+			transition: 0.2s all ease-in-out;
+			visibility: visible;
+		}
+	}
+
+	ul {
+		width: max-content;
+		display: flex;
+		flex-direction: column;
+		padding: 0rem 0rem;
+		justify-content: center;
+	}
+
+	a {
+		display: flex;
+		column-gap: 2rem;
+		justify-content: flex-start;
+		align-items: center;
+		color: $text_colour;
+		padding: 1rem 1rem;
+		width: 6rem;
+		font-size: 1.3rem;
+		font-weight: 300;
+		transition: 0.2s all ease-in-out;
+
+		&:hover {
+			background-color: $primary_colour-dark_hover;
+		}
+
+		svg {
+			font-size: 50px;
+			transition: 0.2s all ease-in-out;
+		}
+
+		li {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
