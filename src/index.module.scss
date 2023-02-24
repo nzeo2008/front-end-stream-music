@@ -1,0 +1,23 @@
+$primary_colour: #212529;
+$primary_colour-dark: #0e1320;
+$primary_colour-dark_hover: #070a11;
+$accent_colour: #eb103c;
+$text_colour: #9ca8b0;
+$white_text_colour: white;
+
+$main_text_font: 'Roboto', sans-serif, serif;
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	font-family: $main_text_font;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+@mixin flexCentered() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
