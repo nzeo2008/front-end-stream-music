@@ -1,14 +1,47 @@
 @import '../../index.module.scss';
 
-.input_field_container {
+.input_container {
 	display: flex;
 	flex-direction: column;
 	margin: 0.5rem 0rem;
 	border-bottom: 0.1rem solid $primary_colour;
-	position: relative;
 
 	&:focus-within {
 		transition: 0.3s all ease-in-out;
 		border-bottom: 0.1rem solid $accent_colour;
+	}
+
+	&_field {
+		display: flex;
+		position: relative;
+
+		label {
+			top: 0.5rem;
+			position: absolute;
+			transition: 0.1s all ease-in-out;
+			pointer-events: none;
+		}
+
+		input:focus-within + label,
+		input:valid + label {
+			font-size: 0.9rem;
+			transform: translateY(-1.2rem);
+		}
+
+		svg {
+			font-size: 1.7rem;
+		}
+
+		&_neutral_icon {
+			color: $text_colour;
+		}
+
+		&_error_icon {
+			color: $accent_colour;
+		}
+
+		&_success_icon {
+			color: $success_colour;
+		}
 	}
 }

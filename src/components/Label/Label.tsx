@@ -2,8 +2,8 @@ import React from 'react';
 import ILabel from './label.interface';
 import styles from './label.module.scss';
 
-function Label({ text }: ILabel) {
-	return <label className={styles.login_label}>{text}</label>;
+function Label({ label }: ILabel) {
+	return <label className={styles.login_label}>{label}</label>;
 }
 
 export default Label;

@@ -1,3 +1,3 @@
 export default interface ILabel{
-    text: string
+    label: string
 }
