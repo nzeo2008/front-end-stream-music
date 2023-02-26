@@ -1,0 +1,59 @@
+@import '../../index.module.scss';
+
+.main_wrapper {
+	@include flex(column, center, center);
+	background-color: $primary_colour;
+	width: 100%;
+	height: 100%;
+
+	&_text_block {
+		color: $text_colour;
+		text-align: center;
+
+		h1 {
+			margin-bottom: 1rem;
+		}
+
+		h3 {
+			margin-bottom: 3rem;
+		}
+	}
+
+	&_form_container {
+		width: 40%;
+		padding: 3rem;
+		background-color: $primary_colour-dark;
+		color: $text_colour;
+		min-width: 30rem;
+
+		button {
+			font-size: 1.5rem;
+			align-self: center;
+		}
+
+		span {
+			display: block;
+			margin-top: 2rem;
+			text-align: center;
+			a {
+				color: $accent_colour;
+			}
+		}
+
+		&_auth_links_container {
+			@include flex(row, center, center, 2rem);
+			margin-top: 1rem;
+		}
+
+		&_image_container {
+			width: 5rem;
+			height: 5rem;
+			cursor: pointer;
+			margin-bottom: 1rem;
+
+			img {
+				@include image();
+			}
+		}
+	}
+}

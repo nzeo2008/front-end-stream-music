@@ -21,9 +21,9 @@ function LoginForm(): JSX.Element {
 						}
 					>
 						<Form>
-							<InputField type="email" text="Email" />
-							<InputField type="password" text="Пароль" />
-							<Button text="Войти" />
+							<InputField type="text" label="Email" />
+							<InputField type="password" label="Пароль" />
+							<Button text="Войти" isDisabled={false} />
 						</Form>
 						<div
 							className={
@@ -43,7 +43,7 @@ function LoginForm(): JSX.Element {
 						<h1>Впервые здесь?</h1>
 						<h3>Тогда попробуй наш сервис абсолютно бесплатно!</h3>
 						<Link to="../register">
-							<Button text="Создать аккаунт" />
+							<Button text="Создать аккаунт" isDisabled={false} />
 						</Link>
 					</div>
 				</div>

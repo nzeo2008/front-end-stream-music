@@ -1,23 +1,64 @@
+// Colours
+
 $primary_colour: #212529;
 $primary_colour-dark: #0e1320;
 $primary_colour-dark_hover: #070a11;
-$accent_colour: #eb103c;
+$accent_colour: #ff1744;
 $text_colour: #9ca8b0;
-$white_text_colour: white;
+$text_colour_darker: #5e6977;
+$white_text_colour: #ffffff;
+$success_colour: #7dc855;
+
+// Fonts
 
 $main_text_font: 'Roboto', sans-serif, serif;
 
-* {
+// Root config
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+html {
 	box-sizing: border-box;
-	margin: 0px;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+* {
+	margin: 0rem;
 	font-family: $main_text_font;
 	letter-spacing: 0.1rem;
 	text-decoration: none;
 	list-style-type: none;
+	font-weight: 300;
 }
 
-@mixin flexCentered() {
+// Mixins
+
+@mixin flex(
+	$direction: row,
+	$justify: center,
+	$align: center,
+	$columnGap: 0rem,
+	$rowGap: 0rem
+) {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	column-gap: $columnGap;
+	row-gap: $rowGap;
+}
+
+@mixin image($fit: cover, $height: 100%, $width: 100%) {
+	object-fit: $fit;
+	height: $height;
+	width: $width;
 }

@@ -18,7 +18,7 @@ function Navbar() {
 					<CottageOutlined />
 					<li>Домой</li>
 				</NavLink>
-				<NavLink to="category">
+				<NavLink to="categories">
 					<LayersOutlined />
 					<li>Категории</li>
 				</NavLink>
@@ -26,7 +26,7 @@ function Navbar() {
 					<DynamicFeedOutlined />
 					<li>Альбомы</li>
 				</NavLink>
-				<NavLink to="video">
+				<NavLink to="videos">
 					<OndemandVideoOutlined />
 					<li>Видео</li>
 				</NavLink>

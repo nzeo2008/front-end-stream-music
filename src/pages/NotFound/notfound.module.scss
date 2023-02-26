@@ -1,0 +1,26 @@
+@import '../../index.module.scss';
+
+.main_wrapper {
+	@include flex(column);
+	padding-top: 5rem;
+	width: 100%;
+	height: 100%;
+	background-color: $primary_colour;
+
+	h1 {
+		color: $accent_colour;
+		font-size: 4rem;
+	}
+
+	p {
+		color: $text_colour_darker;
+		font-size: 2rem;
+		margin-top: 3rem;
+	}
+
+	span {
+		font-size: 25rem;
+		color: $text_colour;
+		margin-top: 6rem;
+	}
+}
