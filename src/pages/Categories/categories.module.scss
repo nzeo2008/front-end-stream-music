@@ -1,0 +1,21 @@
+@import '../../index.module.scss';
+
+.main_wrapper {
+	padding: 2rem;
+
+	&_text_block {
+		display: block;
+	}
+
+	&_music_genres {
+		display: block;
+
+		&_text_section {
+			display: block;
+		}
+
+		&_cards_section {
+			display: block;
+		}
+	}
+}
